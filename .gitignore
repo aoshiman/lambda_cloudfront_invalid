@@ -1,0 +1,7 @@
+*.swp
+.DS_Store
+*.pyc
+__pycache__
+.envrc
+test.json
+.git

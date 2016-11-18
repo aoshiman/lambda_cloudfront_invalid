@@ -1,0 +1,13 @@
+profile: default
+region: us-west-2
+versioning: false
+default_alias: null
+clean_build: false
+configuration:
+  name: lambda_cloudfront_invalid
+  runtime: python2.7
+  role: {{ env['AWS_LAMBDA_ROLE'] }}
+  handler: invalidation.lambda_handler
+  description: Create Invalidation via Lambda Function
+  timeout: 10
+  memory_size: 128
